@@ -38,7 +38,7 @@ tcp.stream == 50 && tls
 icmp
 ```
 
-> Note: Frame numbers and TCP stream IDs refer specifically to the included capture. They will differ in new captures. The TLS flow and DNS transaction are **separate** examples; the DNS query is not evidence that it resolved the TLS endpoint.
+> Note: Frame numbers and TCP stream IDs refer specifically to the original local capture. They will differ in new captures. The TLS flow and DNS transaction are **separate** examples; the DNS query is not evidence that it resolved the TLS endpoint.
 
 ## Key findings
 - DNS query `rec.safesuggestapps.com` returned `104.18.1.141` and `104.18.0.141` with a normal/no-error response; measured query-response time ~41.7 ms.
