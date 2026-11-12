@@ -10,7 +10,8 @@ Capture and analyze normal network traffic to demonstrate practical proficiency 
 - Analyst workstation: macOS, Wireshark capture on Wi-Fi (`en0`).
 - Observed client IPv4: `172.20.10.2` (from packets; device identity not independently established).
 - DNS resolver/gateway observed: `172.20.10.1`.
-- Two original packet captures and four annotated-context screenshots are included.
+- Four protocol-analysis screenshots and a technical investigation report are published. Original packet captures are retained privately.
+
 
 ## Investigations and evidence
 
@@ -22,7 +23,7 @@ Capture and analyze normal network traffic to demonstrate practical proficiency 
 | ICMP | Four echo requests and four replies to/from `1.1.1.1` | [ICMP screenshot](screenshots/04-ICMP-Requests-Replies.png) |
 
 ## Reproduce in Wireshark
-Open the captures in `captures/` and apply these **display filters**:
+Using the original captures retained locally, apply these **display filters**:
 
 ```wireshark
 dns.id == 0x0bc2
@@ -47,8 +48,6 @@ icmp
 - **Security conclusion:** No malicious behavior can be established from these selected packet examples alone.
 
 ## Files
-- [`captures/SOC-Lab-DNS-Analysis-01.pcapng`](captures/SOC-Lab-DNS-Analysis-01.pcapng)
-- [`captures/ICMP-Analysis.pcapng`](captures/ICMP-Analysis.pcapng)
 - [`reports/Network-Traffic-Investigation.md`](reports/Network-Traffic-Investigation.md)
 
 ## Skills demonstrated
